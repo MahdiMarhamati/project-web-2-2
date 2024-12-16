@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>GOLD SALES</title>
+  </head>
+  <body>
+    <!--start header-->
+    <div class="wrapper">
+      <label for="show">
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+      </label>
+      <input type="radio" name="menu" id="show" />
+
+      <header>
+        <nav>
+          <label for="close">
+            <div class="close">&times;</div>
+          </label>
+          <input type="radio" name="menu" id="close" />
+
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">gallery</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">shopping</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!--end header-->
+      <!--start swiper-->
+      <div class="swiper mySwiper-for-jwerly">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="imageswiper" src="./images/jwerly1.jpg" alt="jwerly" />
+          </div>
+          <div class="swiper-slide">
+            <img class="imageswiper" src="./images/jwerly2.jpg" alt="jwerly" />
+          </div>
+          <div class="swiper-slide">
+            <img class="imageswiper" src="./images/jwerly3.jpg" alt="jwerly" />
+          </div>
+          <div class="swiper-slide">
+            <img class="imageswiper" src="./images/jwerly4.jpg" alt="jwerly" />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+        <div class="autoplay-progress">></div>
+      </div>
+      <!--end swiper-->
+      <!--start product-->
+      <div class="products">
+        <div class="product m-b">
+          <h1>bracelet</h1>
+          <div class="imgproduct">
+            <img src="./images/jwerly1.jpg" alt="jwerly" />
+          </div>
+          <div class="price">$100</div>
+          <div class="description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis
+            fugit ratione fuga aperiam tenetur modi possimus eaque, dolore,
+            fugiat placeat nihil quo labore architecto molestiae sequi
+            consequatur assumenda soluta explicabo nemo deserunt, temporibus
+            laudantium suscipit magni. Rerum ex veniam hic, nisi consectetur
+            saepe? Quam porro itaque delectus enim unde animi.
+          </div>
+          <div class="category">JWERLY</div>
+          <div class="rating">
+            <div class="count">10</div>
+            <div class="rate">3.5</div>
+          </div>
+        </div>
+        <div class="product m-b">
+          <h1>necklace</h1>
+          <div class="imgproduct">
+            <img src="./images/jwerly2.jpg" alt="jwerly" />
+          </div>
+          <div class="price">$100</div>
+          <div class="description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis
+            fugit ratione fuga aperiam tenetur modi possimus eaque, dolore,
+            fugiat placeat nihil quo labore architecto molestiae sequi
+            consequatur assumenda soluta explicabo nemo deserunt, temporibus
+            laudantium suscipit magni. Rerum ex veniam hic, nisi consectetur
+            saepe? Quam porro itaque delectus enim unde animi.
+          </div>
+          <div class="category">JWERLY</div>
+          <div class="rating">
+            <div class="count">10</div>
+            <div class="rate">3.5</div>
+          </div>
+        </div>
+        <div class="product m-b">
+          <h1>jwerly</h1>
+          <div class="imgproduct">
+            <img src="./images/jwerly3.jpg" alt="jwerly" />
+          </div>
+          <div class="price">$100</div>
+          <div class="description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis
+            fugit ratione fuga aperiam tenetur modi possimus eaque, dolore,
+            fugiat placeat nihil quo labore architecto molestiae sequi
+            consequatur assumenda soluta explicabo nemo deserunt, temporibus
+            laudantium suscipit magni. Rerum ex veniam hic, nisi consectetur
+            saepe? Quam porro itaque delectus enim unde animi.
+          </div>
+          <div class="category">JWERLY</div>
+          <div class="rating">
+            <div class="count">10</div>
+            <div class="rate">3.5</div>
+          </div>
+        </div>
+        <div class="product">
+          <h1>rings</h1>
+          <div class="imgproduct">
+            <img src="./images/jwerly4.jpg" alt="jwerly" />
+          </div>
+          <div class="price">$100</div>
+          <div class="description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis
+            fugit ratione fuga aperiam tenetur modi possimus eaque, dolore,
+            fugiat placeat nihil quo labore architecto molestiae sequi
+            consequatur assumenda soluta explicabo nemo deserunt, temporibus
+            laudantium suscipit magni. Rerum ex veniam hic, nisi consectetur
+            saepe? Quam porro itaque delectus enim unde animi.
+          </div>
+          <div class="category">JWERLY</div>
+          <div class="rating">
+            <div class="count">10</div>
+            <div class="rate">3.5</div>
+          </div>
+        </div>
+      </div>
+      <!--end product-->
+    </div>
+  </body>
+  <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const progressCircle = document.querySelector(".autoplay-progress svg");
+    const progressContent = document.querySelector(".autoplay-progress span");
+    var swiper = new Swiper(".mySwiper-for-jwerly", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      on: {
+        autoplayTimeLeft(s, time, progress) {
+          progressCircle.style.setProperty("--progress", 1 - progress);
+          progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+        },
+      },
+    });
+  </script>
+</html>
